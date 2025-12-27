@@ -1,0 +1,29 @@
+---
+title: "Portopackage"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Portopackage}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+Om dit pakket te kunnen activeren gebruik de code:
+```{r setup}
+library(Portopackage)
+```
+
+Als het pakket eenmal geactiveerd is zijn er 4 functies aanwezig. Voor al deze 4 de functies is er een DNA sequentie nodig. De lengte hiervan maakt niet uit. Het is alleen nodig dat of alles in hoofdletters of in kleine letters staat. Vervolgens kunnen de volgende code's gerund worden
+```{r, eval=FALSE}
+lengte_sequentie()   # Voor het kijken hoelang de sequentie is
+tellen_nucleotides() # Het tellen van de verschillende nucleotides
+percentage_GC()      # Het berekenen van de hoeveelheid GC in de sequentie
+AG_of_TC()           # Kijken of er meer purines of pyrimidines inzitten
+```
+
+Als een functie niet duidelijk is kan de functie gerund worden met een vraagteken ervoor. Hier staat dan meer informatie.
